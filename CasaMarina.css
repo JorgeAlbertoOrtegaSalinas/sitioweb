@@ -1,22 +1,37 @@
-/* Estilos Generales */
-* {
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
-    background-color: #f9f9f9;
 }
 
-/* Cabecera (Header) */
+h1, h2, h3 {
+    color: #005f73;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    margin: 0 0 1em;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: #005f73;
+}
+
+a:hover {
+    color: #94d2bd;
+}
+
+/* Navegación */
 header {
-    background-color: #111c25;
-    color: #fff;
-    padding: 15px 20px;
+    background: #111c25;
+    color: white;
+    padding: 10px 20px;s
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -26,38 +41,35 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
 
 .nav-links li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .nav-links a {
-    color: #fff;
-    text-decoration: none;
+    color: white;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
 }
 
 .nav-links a:hover {
     color: #94d2bd;
 }
 
-/* Sección Hero */
+/* Hero Section */
 .hero {
     position: relative;
     text-align: center;
     color: white;
-    overflow: hidden;
 }
 
 .hero img {
     width: 100%;
     height: auto;
-    filter: brightness(60%);
+    filter: brightness(70%);
 }
 
 .hero-text {
@@ -65,32 +77,29 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
 }
 
-.hero-text h1 {
+.hero h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.hero-text p {
-    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
+.hero p {
+    font-size: 1.2rem;
+}
+
 .hero .btn-primary {
-    padding: 10px 20px;
-    background-color: #94d2bd;
+    background: #94d2bd;
     color: #333;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 .hero .btn-primary:hover {
-    background-color: #e9d8a6;
+    background: #e9d8a6;
 }
 
 /* Sección General */
@@ -100,10 +109,9 @@ section {
 }
 
 section img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin-top: 20px;
-    border-radius: 10px;
 }
 
 /* Menú */
@@ -115,7 +123,7 @@ section img {
 }
 
 .menu-item {
-    background-color: #e9d8a6;
+    background: #e9d8a6;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -127,9 +135,8 @@ section img {
 }
 
 .menu-item h3 {
-    margin: 15px 0;
+    margin-top: 15px;
 }
-
 
 /* Galería */
 .gallery-grid {
@@ -143,7 +150,8 @@ section img {
     width: 100%;
     border-radius: 5px;
 }
-/* Formulario de Contacto */
+
+/* Contacto */
 .contact-info {
     margin-bottom: 20px;
 }
@@ -159,13 +167,12 @@ form input, form textarea {
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1rem;
 }
 
 form button {
-    padding: 10px 20px;
-    background-color: #005f73;
+    background: #005f73;
     color: white;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -173,7 +180,21 @@ form button {
 }
 
 form button:hover {
-    background-color: #94d2bd;
+    background: #94d2bd;
+}
+
+/* Reservaciones */
+.reservations .btn-primary {
+    background: #005f73;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.reservations .btn-primary:hover {
+    background: #94d2bd;
 }
 
 /* Footer */
