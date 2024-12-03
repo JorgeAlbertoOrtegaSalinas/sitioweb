@@ -31,7 +31,7 @@ a:hover {
 header {
     background: #111c25;
     color: white;
-    padding: 10px 20px;s
+    padding: 10px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -219,3 +219,49 @@ footer .social-links img {
 footer .social-links img:hover {
     filter: brightness(1.2);
 }
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduce el tamaño del texto */
+    }
+
+    .hero-text h1 {
+        font-size: 2rem; /* Ajusta el tamaño del título */
+    }
+
+    .hero-text p {
+        font-size: 1rem; /* Reduce el tamaño de los párrafos */
+    }
+
+    p {
+        margin: 0 10px; /* Añade márgenes laterales */
+    }
+
+    .menu-item {
+        padding: 15px; /* Reduce el espacio interno de los elementos */
+    }
+
+    .menu-item h3 {
+        font-size: 1.2rem; /* Ajusta el tamaño de los subtítulos */
+    }
+
+    section img {
+        margin-top: 10px; /* Reduce espacio entre imágenes y contenido */
+    }
+
+    nav ul.nav-links {
+        flex-direction: column; /* Apila los enlaces de navegación */
+        align-items: center;
+    }
+
+    nav ul.nav-links li {
+        margin: 10px 0; /* Añade separación entre enlaces */
+    }
+
+    .hero .btn-primary {
+        padding: 8px 15px; /* Ajusta el tamaño del botón */
+        font-size: 0.9rem;
+    }
+}
+
