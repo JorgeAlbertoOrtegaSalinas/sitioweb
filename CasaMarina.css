@@ -221,27 +221,5 @@ footer .social-links img:hover {
 }
 
 
-/* Ajustes Responsivos */
-@media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-
-    .hero-text p {
-        font-size: 1rem;
-    }
-
-    .menu-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .nav-links {
-        flex-direction: column;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-}
 
 
